@@ -38,7 +38,7 @@ A simple .NET 9 Web API for managing tasks.
 
 4. The API will start on the port specified in `TaskManager.Api/Properties/launchSettings.json` (default: `http://localhost:5121`).
 
-### Accessing Swagger UI
+### Accessing API Documentation
 
 - Open your browser and navigate to:
 	- [http://localhost:5121/swagger](http://localhost:5121/swagger)
@@ -51,7 +51,7 @@ Swagger UI will display all available endpoints and allow you to interact with t
 dotnet test
 ```
 
-## API Usage Examples
+## Quick Usage Examples
 
 ### Get All Tasks (with default sorting by DueDate ascending)
 ```http
@@ -62,6 +62,8 @@ GET /api/tasks
 ```http
 GET /api/tasks?title=meeting&isCompleted=false&sortBy=DueDate&sortOrder=Ascending&page=1&pageSize=10
 ```
+
+For complete endpoint documentation and interactive testing, visit the API Documentation using Swagger UI above.
 
 ### Sorting Options
 - **sortBy**: Field to sort by. Valid values: `Id`, `Title`, `DueDate`, `IsCompleted` (default: `DueDate`)
